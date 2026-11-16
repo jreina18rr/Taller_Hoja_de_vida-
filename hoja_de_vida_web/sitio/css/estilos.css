@@ -1,0 +1,67 @@
+:root{
+  --navy:#0f1f66; --navy-osc:#0a1547; --azul:#2d4bd1; --cielo:#dfe6ff;
+  --papel:#f6f7fb; --tinta:#1b1f33; --gris:#5a6078; --linea:#d5d9ea;
+  --fuente-titulo:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;
+  --fuente-texto:"Figtree","Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fuente-texto);color:var(--tinta);background:var(--papel);line-height:1.65;font-size:1.05rem}
+img{max-width:100%;display:block}
+a{color:var(--azul)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+
+.menu{position:sticky;top:0;z-index:10;background:var(--navy-osc);display:flex;justify-content:space-between;align-items:center;padding:.8rem 6%;flex-wrap:wrap;gap:.5rem}
+.menu .marca{font-family:var(--fuente-titulo);color:#fff;font-weight:700;text-decoration:none;font-size:1.1rem}
+.menu ul{list-style:none}
+.menu li{display:inline-block}
+.menu li a{color:#c9d3ff;text-decoration:none;padding:.4rem .9rem;border-radius:6px;display:inline-block}
+.menu li a:hover,.menu li a.activo{background:var(--azul);color:#fff}
+
+.portada{background:var(--navy);color:#fff;padding:4rem 6% 5rem;display:flex;flex-wrap:wrap;align-items:center;gap:3rem;justify-content:center}
+.portada .foto{width:280px;height:320px;object-fit:cover;object-position:top;border:6px solid #fff;border-radius:4px;box-shadow:14px 14px 0 var(--azul)}
+.portada .texto{max-width:34rem}
+.portada h1{font-family:var(--fuente-titulo);font-size:clamp(2.4rem,6vw,4rem);line-height:1.05;font-weight:800}
+.portada .cargo{display:inline-block;margin-top:1rem;background:#fff;color:var(--navy);padding:.3rem .9rem;font-weight:700;border-radius:4px}
+.portada p{margin-top:1.2rem;color:#dfe6ff}
+.botones{margin-top:1.8rem;display:flex;gap:.8rem;flex-wrap:wrap}
+.boton{display:inline-block;padding:.7rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:700;border:2px solid #fff;color:#fff}
+.boton.lleno{background:#fff;color:var(--navy)}
+.boton:hover{background:var(--azul);border-color:var(--azul);color:#fff}
+
+.contenedor{max-width:62rem;margin:0 auto;padding:3.5rem 6%}
+h2{font-family:var(--fuente-titulo);color:var(--navy);font-size:2rem;margin-bottom:1rem}
+h3{font-family:var(--fuente-titulo);color:var(--navy);font-size:1.25rem}
+p+p{margin-top:.9rem}
+hr{border:0;border-top:3px solid var(--navy);width:4rem;margin:0 0 1.5rem}
+.resaltado{background:var(--cielo);padding:0 .3rem;border-radius:3px}
+.dos-col{display:flex;flex-wrap:wrap;gap:2.5rem}
+.dos-col>div{flex:1 1 18rem}
+
+.etiquetas{list-style:none;margin-top:.5rem}
+.etiquetas li{display:inline-block;background:var(--cielo);color:var(--navy);padding:.35rem .9rem;margin:0 .4rem .6rem 0;border-radius:999px;font-weight:600}
+
+.tabla-caja{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:#fff}
+caption{text-align:left;font-weight:700;color:var(--navy);padding-bottom:.6rem}
+th,td{padding:.9rem 1rem;text-align:left;border-bottom:1px solid var(--linea);vertical-align:top}
+th{background:var(--navy);color:#fff}
+tr:nth-child(even) td{background:#f1f3fc}
+
+.trabajo{background:#fff;border-left:8px solid var(--azul);padding:1.6rem 1.8rem;margin-top:1.5rem}
+.trabajo .fecha{color:var(--gris);font-weight:600;margin:.2rem 0 1rem}
+.trabajo ul{padding-left:1.2rem}
+.trabajo li+li{margin-top:.6rem}
+.herramientas{margin-top:1.2rem}
+
+.datos{list-style:none}
+.datos li{margin-bottom:.8rem}
+form{background:#fff;padding:1.6rem;border:1px solid var(--linea)}
+label{display:block;font-weight:700;margin:1rem 0 .3rem}
+label:first-of-type{margin-top:0}
+input,textarea{width:100%;padding:.7rem;border:1px solid var(--linea);border-radius:6px;font:inherit}
+button{margin-top:1.2rem;background:var(--navy);color:#fff;border:0;padding:.8rem 1.6rem;border-radius:6px;font:inherit;font-weight:700;cursor:pointer}
+button:hover{background:var(--azul)}
+
+footer{background:var(--navy-osc);color:#c9d3ff;text-align:center;padding:1.6rem 6%;font-size:.95rem}
+footer a{color:#fff}
